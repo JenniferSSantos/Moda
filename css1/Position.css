@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    font-size: arial;
+    }
+.menu a:hover, .ativo{
+    color: #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 3px;
+}
+
+header{
+    background-color: #ff0909;
+}
+nav{
+    width: 1366;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.banner{
+    width: 1366px;
+    margin:auto;
+    position: relative;
+}
+.texto-banner{
+    position: absolute;
+    bottom: 50px;
+    left:50px;
+    color: white;
+}
+.texto-banner .t1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+}
+.texto-banner .t2{
+    font-family: arial;
+    font-size: 30px;
+}
+.texto-banner p{
+    margin-bottom: 20px;
+    font-family: arial;
+}
+.container{
+    width: 1170;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.card{
+    width: 350px;
+    font-family: arial;
+    line-height: 2.0;
+    margin-top: 60px;
+
+}
+.card p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btn{
+    font-family: arial;
+    background-color: #ff0909;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.btn:hover{
+    color: #ff0909;
+    background-color: white;
+    border: 2px solid #ff0909;
+}
+footer{
+    background-color: #ff0909;
+    text-align: center;
+    color:white;
+    font-family: arial;
+    padding-bottom: 30px;
+    padding-top: 30px; /*medias queries*/  /*tablet*/          
+}
+
+@media (max-width:1169px){
+    nav{
+        width:768px;
+    }
+    .banner img{
+        width: 100%
+    }
+    .banner{
+        width: 768px;
+    }
+    .texto-banner .t1{
+        font-size: 22px;
+    }
+    .texto-banner .t2{
+        font-size: 15px;
+    }
+    .container{
+        width: 720px;   
+    }
+
+} 
+/*smart*/
+@media (max-width:767px){
+    nav{
+       width: 368px;
+       flex-direction: column; 
+    }
+    .menu{
+        flex-direction: column;
+        width:150px;
+        padding-top: 15px;
+    }
+    .menu a{
+        padding-top: 15px;
+    }
+    .banner img{
+        display: none;
+    }
+    .texto-banner{
+        color:black;
+        position: static;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .container{
+        width: 350px;
+    }
+    .banner{
+        width: 368px;
+    }
+    
+        
+    
+}
